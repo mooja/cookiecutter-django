@@ -42,7 +42,7 @@ services:
     depends_on:
      - postgres
      - redis
-    command: celery -A {{cookiecutter.repo_name}}.taskapp worker -l INFO
+    command: celery -A app.taskapp worker -l INFO
 
   celerybeat:
     build:

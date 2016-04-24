@@ -67,7 +67,7 @@ def make_secret_key(project_directory):
     # Determine the local_setting_file_location
     local_setting = os.path.join(
         project_directory,
-        'config/settings/local.py'
+        'app/config/settings/local.py'
     )
 
     # local.py settings file
@@ -87,7 +87,7 @@ def remove_task_app(project_directory):
     # Determine the local_setting_file_location
     task_app_location = os.path.join(
         PROJECT_DIRECTORY,
-        '{{ cookiecutter.repo_name }}/taskapp'
+        'app/taskapp'
     )
     shutil.rmtree(task_app_location)
 
