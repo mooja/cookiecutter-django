@@ -23,7 +23,7 @@ services:
     environment:
       - POSTGRES_USER={{cookiecutter.repo_name}}
     volumes:
-      - .:/app
+      - ./app:/app
     ports:
       - "8000:8000"
     links:
